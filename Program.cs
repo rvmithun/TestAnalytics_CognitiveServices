@@ -32,7 +32,7 @@ namespace TestAnalytics
             Console.WriteLine("Please provide your comments");
             var inputText = Console.ReadLine();
             DocumentSentiment documentSentiment = client.AnalyzeSentiment(inputText);
-            Console.WriteLine($"Feedback level: {documentSentiment.ConfidenceScores} feedback\n");
+            Console.WriteLine($"Feedback level: {documentSentiment.Sentiment} feedback\n");
             Console.ReadLine();
 
         }
